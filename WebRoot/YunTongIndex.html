@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>云通首页</title>
+<meta charset="utf-8">
+
+<meta name="keywords" content="keyword1,keyword2,keyword3">
+<meta name="description" content="this is my page">
+<meta name="content-type" content="text/html; charset=US-ASCII">
+
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top site-navbar-header">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="/"> <img src="img/logo.svg"
+					alt="Mashape">
+				</a>
+			</div>
+
+			<form class="navbar-form navbar-right hidden-xs hidden-sm"
+				role="search" action="https://market.mashape.com/explore"
+				method="GET" target="_blank">
+				<div class="input-group">
+					<input type="text" name="query" class="form-control"
+						placeholder="搜索APIs" required=""> <span
+						class="input-group-btn">
+						<button class="btn btn-trans" type="submit">
+							<i class="fa fa-search"></i>
+						</button>
+					</span>
+				</div>
+				<!-- href="/request-demo"需要更改 -->
+				<a class="btn btn-white" href="/request-demo">联系我们</a>
+			</form>
+
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<!-- 需要更改为自己的博客和邮箱地址 -->
+					<li><a href="http://blog.mashape.com/">博客</a></li>
+					<li><a href="mailto:support@mashape.com">支持</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</body>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>

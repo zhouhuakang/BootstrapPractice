@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>bootstrap时NavBar练手页面</title>
+<meta charset="utf-8">
+<meta name="viewport" content="witdth=device-width,initial-scale=1">
+
+<meta name="keywords" content="keyword1,keyword2,keyword3">
+<meta name="description" content="this is my page">
+<meta name="content-type" content="text/html; charset=US-ASCII">
+
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+			<!--.navbar-brand指定了导航条的名称，这里导航条的名字是"导航条的名字",起到提醒的目的，其实可以不加的吧？ -->
+			<a class="navbar-brand" href="#">导航条的名字</a>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">高亮的条目1</a></li>
+				<li><a href="#">普通的条目2</a></li>
+				<li class="disabled"><a href="#">无效的条目3</a></li>
+				<li><a href="#">普通的条目4</a></li>
+			</ul>
+		</div>
+	</nav>
+</body>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>
