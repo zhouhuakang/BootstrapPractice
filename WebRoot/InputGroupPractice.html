@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>InputGroupPractice.html</title>
+<meta charset="utf-8">
+<meta name="viewport" content="witdth=device-width,initial-scale=1">
+
+<meta name="keywords" content="keyword1,keyword2,keyword3">
+<meta name="description" content="this is my page">
+<meta name="content-type" content="text/html; charset=US-ASCII">
+
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- 主要参考官网的例子 http://v4-alpha.getbootstrap.com/components/input-group/ -->
+	<!-- <input>必须使用 form-control 样式-->
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">@</span> <input
+			type="text" class="form-control" placeholder="Username"
+			aria-describedby="basic-addon1">
+	</div>
+	<br>
+	<div class="input-group">
+		<input type="text" class="form-control"
+			placeholder="Recipient's username" aria-describedby="basic-addon2">
+		<span class="input-group-addon" id="basic-addon2">@example.com</span>
+	</div>
+	<br>
+	<label for="basic-url">Your vanity URL</label>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+		<input type="text" class="form-control" id="basic-url"
+			aria-describedby="basic-addon3">
+	</div>
+	<br>
+	<div class="input-group">
+		<span class="input-group-addon">$</span> <input type="text"
+			class="form-control" aria-label="Amount (to the nearest dollar)">
+		<span class="input-group-addon">.00</span>
+	</div>
+
+
+
+
+	<br>
+	<div class="row">
+		<div class="input-group">
+			<input id="user_role" class="form-control" type="text" value="管理员"
+				aria-label="Text input with dropdown button">
+			<div class="input-group-btn">
+				<button type="button" class="btn btn-secondary dropdown-toggle"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					用户类型</button>
+				<!-- <span class="caret"></span> -->
+				<ul class="dropdown-menu dropdown-menu-right">
+					<li><a class="dropdown-item" href="#"
+						onClick="$('#user_role').val('管理员');">管理员</a></li>
+					<li><a class="dropdown-item" href="#"
+						onClick="$('#user_role').val('企业开发者');">企业开发者</a></li>
+					<li><a class="dropdown-item" href="#"
+						onClick="$('#user_role').val('个人开发者');">个人开发者</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>
